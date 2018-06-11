@@ -8,31 +8,86 @@
 
   <title>Russia</title>
 
-  <!-- Bootstrap -->
-  <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
   <!-- Custom stlylesheet -->
   <link type="text/css" rel="stylesheet" href="css/style.css" />
+  <script type="text/javascript" src="https://vk.com/js/api/share.js?93" charset="windows-1251"></script>
 
 </head>
 
 <body>
-  <div class="container">
-    <div class="row header">
-      <h1>imadra</h1>
+  <div id="section">
+    <div id="background">
+      <img src="img/bg15.jpg" alt="" width="100%">
     </div>
+  </div>
+  <div class="wrap">
+    <script type="text/javascript"> 
+    document.write(VK.Share.button({url: 'http://localhost:8000', title: 'Заголовок страницы'}, {type: 'round', text:"Поделиться"})); 
+    </script>
+  </div>
+  <div class="container">
     <div id="countdown">
       <div id='tiles'></div>
       <div class="labels">
-        <li>Days</li>
-        <li>Hours</li>
-        <li>Mins</li>
-        <li>Secs</li>
+        <li>Дни</li>
+        <li>Часы</li>
+        <li>Минуты</li>
+        <li>Секунды</li>
       </div>
     </div>
   </div>
+  <div class="row">
+  <h2>Со старта Чемпионата Мира 2018, сборная России не вылетела уже как:</h2>
+  </div>
+  <!-- Put this script tag to the <head> of your page -->
+  <script type="text/javascript" src="https://vk.com/js/api/openapi.js?154"></script>
+  <!-- Put this div tag to the place, where the Poll block will be -->
+  <div class="poll">
+    <div id="vk_poll">
+    </div>
+  </div>
+  <script type="text/javascript">
+  VK.Widgets.Poll("vk_poll", {width: 465}, "295757053_ae6b4162f38226cf99");
+  </script>
+
+
+  <!--<div class="ask">
+      <div class="col-md-5">
+        <h3>Угадай когда сборная России покинет турнир?</h3>
+      </div>
+      <div class="col-md-7">
+        <input type="radio" id="ch1" name="ch">
+        <label for="ch1">Групповой этап</label>
+        <br>
+
+        <input type="radio" id="ch3" name="ch">
+        <label for="ch3">1/8 финала. Дата</label>
+        <br>
+
+        <input type="radio" id="ch4" name="ch">
+        <label for="ch4">1/4 финала. Дата</label>
+        <br>
+
+        <input type="radio" id="ch5" name="ch">
+        <label for="ch5">1/2 финала. Дата</label>
+        <br>
+
+        <input type="radio" id="ch6" name="ch">
+        <label for="ch6">Дойдет до финала. Дата</label>
+
+        <!--<input type="text">-->
+
+        <!--<div>
+          <button type="submit" class="btn" onclick="f2()" href="">Отправить</button>
+        </div>
+      </div>
+  </div>-->
 
   <script type="text/javascript" src="js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 
 </html>
